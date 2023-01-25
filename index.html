@@ -8,44 +8,45 @@
         <title>Pocket Calculator</title>
     </head>
     <body>
-        <p>0</p>
-        <button type="button" class="number">
+        <p><span id="value"></span></p>
+        <button type="button" class="number" onclick="addNumber(1)">
             1
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(2)">
             2
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(3)">
             3
-        </button><button type="button" class="operator">
+        </button><button type="button" class="operator" onclick="addOperator('+')">
             +
         </button>
         <br>
-        <button type="button" class="number">
+        <button type="button" class="number" onclick="addNumber(4)">
             4
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(5)">
             5
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(6)">
             6
-        </button><button type="button" class="operator">
+        </button><button type="button" class="operator" onclick="addOperator('-')">
             -
         </button>
         <br>
-        <button type="button" class="number">
+        <button type="button" class="number" onclick="addNumber(7)">
             7
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(8)">
             8
-        </button><button type="button" class="number">
+        </button><button type="button" class="number" onclick="addNumber(9)">
             9
-        </button><button type="button" class="operator">
+        </button><button type="button" class="operator" onclick="addOperator('*')">
             *
         </button>
         <br>
-        <button type="button" class="number">
+        <button type="button" class="number" onclick="addNumber(0)">
             0
-        </button><button type="button" class="utility">
+        </button><button type="button" class="utility" onclick="erase()">
             C/E
-        </button><button type="button" class="utility">
+        </button><button type="button" class="utility" onclick="calculate()">
             =
-        </button><button type="button" class="operator">
+        </button><button type="button" class="operator" onclick="addOperator('/')">
             /
         </button>
+        <script src="./script.js"></script>
     </body>
