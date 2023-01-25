@@ -10,7 +10,7 @@ function addNumber(x) {
         newNumber = false;
     }
     else {
-        if (number.toString().length < 10) {
+        if (number.toString().length < 9) {
             number = (number * 10) + x;
         }
     }
@@ -47,8 +47,8 @@ function calculate() {
     newNumber = true;
     operator = "";
     storedNumber = 0;
-    if (number > 9999999999) {
-        document.getElementById("value").innerHTML = ">9999999999";
+    if (number > 999999999) {
+        document.getElementById("value").innerHTML = ">999999999";
     }
     else {
         document.getElementById("value").innerHTML = number;
