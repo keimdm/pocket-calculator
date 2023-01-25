@@ -51,6 +51,15 @@ function calculate() {
         document.getElementById("value").innerHTML = ">999999999";
     }
     else {
-        document.getElementById("value").innerHTML = number;
+        if (number.toString().length > 9) {
+            testString = number.toString().slice(0, 10);
+            if (testString.slice(-1).valueOf() === '.'.valueOf()) {
+                testString = testString.slice(0, 9);
+            }
+            document.getElementById("value").innerHTML = testString;
+        }
+        else {
+            document.getElementById("value").innerHTML = number;
+        }
     }
 }
