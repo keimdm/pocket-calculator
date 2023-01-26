@@ -37,12 +37,27 @@ button {
     color: black;
 }
 
+.number:active {
+    background-color: grey;
+    color: black;
+}
+
 .operator {
     background-color: orange;
     color: black;
 }
 
+.operator:active {
+    background-color: darkorange;
+    color: black;
+}
+
 .utility {
+    background-color: lightslategray;
+    color: black;
+}
+
+.utility:active {
     background-color: darkslategray;
-    color: white;
+    color: black;
 }
