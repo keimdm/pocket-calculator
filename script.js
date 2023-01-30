@@ -33,16 +33,41 @@ function erase() {
 
 function calculate() {
     if (operator === "+") {
-        number = storedNumber + number;
+        if (isNaN(storedNumber)) {
+            number = "Err: Str";
+        }
+        else {
+            number = storedNumber + number;
+        }
     }
     else if (operator === "-") {
-        number = storedNumber - number;
+        if (isNaN(storedNumber)) {
+            number = "Err: Str";
+        }
+        else {
+            number = storedNumber - number;
+        }
     }
     else if (operator === "*") {
-        number = storedNumber * number;
+        if (isNaN(storedNumber)) {
+            number = "Err: Str";
+        }
+        else {
+            number = storedNumber * number;
+        }
     }
     else if (operator === "/") {
-        number = storedNumber / number;
+        if (number === 0) {
+            number = "Err: /0"
+        } 
+        else {
+            if (isNaN(storedNumber)) {
+                number = "Err: Str";
+            }
+            else {
+                number = storedNumber / number;
+            }
+        }
     }
     newNumber = true;
     operator = "";
